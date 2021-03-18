@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButtonFavorite2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButtonMain2"
-        app:srcCompat="@drawable/ic_icon2" />
+        app:srcCompat="@drawable/ic_icon2_on" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"

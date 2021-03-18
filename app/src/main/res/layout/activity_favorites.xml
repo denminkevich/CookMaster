@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButtonShoppingList3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButtonIngredients3"
-        app:srcCompat="@drawable/ic_icon3" />
+        app:srcCompat="@drawable/ic_icon3_on" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"

@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButtonFavorite4"
-        app:srcCompat="@drawable/ic_icon4" />
+        app:srcCompat="@drawable/ic_icon4_on" />
 
     <ImageButton
         android:id="@+id/imageButtonMain4"
