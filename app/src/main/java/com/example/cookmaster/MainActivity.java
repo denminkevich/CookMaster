@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton = (ImageButton) findViewById(R.id.imageButtonFavorite);
+        ImageButton = (ImageButton) findViewById(R.id.imageButtonShoppingList);
         ImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
