@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShoppingListActivity">
+    tools:context=".FavoritesActivity">
 
     <TextView
         android:id="@+id/FavoritesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Список покупок"
+        android:text="Фавориты"
         android:textColor="#0BB9A0"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -20,52 +20,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageButton
-        android:id="@+id/imageButtonShoppingList4"
+        android:id="@+id/imageButtonShoppingList3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
+        android:layout_marginBottom="9dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonFavorite4"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonFavorite3"
         app:srcCompat="@drawable/ic_icon4" />
 
     <ImageButton
-        android:id="@+id/imageButtonMain4"
+        android:id="@+id/imageButtonIngredients3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
+        android:layout_marginBottom="9dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonIngredients4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_icon1" />
-
-    <ImageButton
-        android:id="@+id/imageButtonIngredients4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        android:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonFavorite4"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonFavorite3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButtonMain4"
         app:srcCompat="@drawable/ic_icon2" />
 
     <ImageButton
-        android:id="@+id/imageButtonFavorite4"
+        android:id="@+id/imageButtonMain4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
+        android:layout_marginBottom="9dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonShoppingList4"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonIngredients3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonIngredients4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_icon1" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFavorite3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonShoppingList3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonIngredients3"
         app:srcCompat="@drawable/ic_icon3" />
 
     <androidx.constraintlayout.widget.Barrier
@@ -73,6 +74,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="top"
-        app:constraint_referenced_ids="imageButtonMain4,imageButtonShoppingList4,imageButtonFavorite4,imageButtonIngredients4" />
+        app:constraint_referenced_ids="imageButtonMain4,imageButtonIngredients3,imageButtonFavorite3,imageButtonShoppingList3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
