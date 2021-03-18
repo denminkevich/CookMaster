@@ -2,17 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ShoppingListActivity">
 
     <TextView
         android:id="@+id/ShoppingListTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="CookMaster"
+        android:text="Список покупок"
         android:textColor="#0BB9A0"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -22,59 +21,58 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButtonShoppingList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonFavorite"
-        app:srcCompat="@drawable/ic_icon4" />
-
-    <ImageButton
-        android:id="@+id/imageButtonFavorite"
+        android:id="@+id/imageButtonShoppingList3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="7dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonShoppingList"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonIngredients"
-        app:srcCompat="@drawable/ic_icon3" />
-
+        app:layout_constraintStart_toEndOf="@+id/imageButtonFavorite3"
+        app:srcCompat="@drawable/ic_icon4" />
 
     <ImageButton
-        android:id="@+id/imageButtonIngredients"
+        android:id="@+id/imageButtonMain3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="7dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonFavorite"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonMain"
-        app:srcCompat="@drawable/ic_icon2" />
-
-    <ImageButton
-        android:id="@+id/imageButtonMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonIngredients"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonIngredients3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_icon1" />
+
+    <ImageButton
+        android:id="@+id/imageButtonIngredients3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonFavorite3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonMain3"
+        app:srcCompat="@drawable/ic_icon2" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFavorite3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonShoppingList3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonIngredients3"
+        app:srcCompat="@drawable/ic_icon3" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="top"
-        app:constraint_referenced_ids="imageButtonMain,imageButtonIngredients,imageButtonFavorite,imageButtonShoppingList" />
+        app:constraint_referenced_ids="imageButtonMain3,imageButtonShoppingList3,imageButtonFavorite3,imageButtonIngredients3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
